@@ -1,0 +1,28 @@
+#result {
+    display: none;
+    background-color: #f46a81;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+.resultname{
+    font-size: 26px;
+}
+
+.resultDesc {
+    font-size: 18px;
+}
+
+.share {
+    color: white;
+    background-color: #FEE500;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.share:hover, .share:focus{
+    background-color: #f46a81;
+    color: #FEE500;
+}
