@@ -38,9 +38,35 @@ wcs_do();
 }
 </script>
 
+<SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT">
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth()+6)
+    hitCt = eval(cookieVal("pageHit"))
+    hitCt++
+    document.cookie = "pageHit="+hitCt+";expires=" + expireDate.toGMTString()
+    
+    function cookieVal(cookieName) {
+    thisCookie = document.cookie.split("; ")
+    for (i=0; i<thisCookie.length; i++) {
+    if (cookieName == thisCookie[i].split("=")[0]) {
+    return thisCookie[i].split("=")[1]
+    }
+    }
+    return 0
+    }
+    
+    </SCRIPT>
 
 </head>
 <body>
+
+<div class="conter">
+    <h1>ㅤ</h1>
+    <script lang=javascript type="text/javascript">
+        document.write("MBTI로 알아보는 연애유형의 <font color=red>" + hitCt + "</font> 번째 <br> 방문자이시네요.")
+        </script>
+</div>
+
     <div class="container">
     <section id="main" class="mx-auto my-5 py-5 px-3">
         <h1>MBTI로 알아보는 연애유형</h1>
